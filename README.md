@@ -1,2 +1,2 @@
 # adumbscraper
-![](./images/Twitter_Gif.gif)
+![Alt Text](./images/Twitter_Gif.gif)
