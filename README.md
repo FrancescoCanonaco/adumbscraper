@@ -1,3 +1,3 @@
 # adumbscraper
 
-<img src="./images/Twitter-Gif.gif" width="110" height="110" />
+<img src="./images/Twitter-Gif.gif" width="150" height="150" />
