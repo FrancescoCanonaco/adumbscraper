@@ -2,6 +2,10 @@
 
 <img src="./images/Twitter-Gif.gif" width="150" height="150" />
 
+## Introduction
+A DumbScraper is a simple twitter scraper coded in python 3. Basically it is used to download and save tweets in a time period for a specified profile.
+
+
 ## Installation & Usage 
 
 ### Installation
