@@ -19,7 +19,7 @@ Once you have installed Selenium you are ready to go:
 
 >The "T" separator is used to separate day and time.
 
-the command above generates a .csv file with all the tweets and some information like: <b>comments</b>, <b>likes</b> and <b>retweets</b>.
+the command above generates a .csv file with all the tweets and some information such as: <b>comments</b>, <b>likes</b> and <b>retweets</b>.
 </p>
 
 
