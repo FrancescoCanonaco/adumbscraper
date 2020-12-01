@@ -17,7 +17,7 @@ Once you have installed Selenium you are ready to go:
 
 <code>
 <b>python3</b>  <i>dumb_scraper.py</i> <b>--username
-</b> <i>matteosalvinimi</i> <b>--start_date</b> <i>2020-11-09T23:59:59</i> <b>--end_date</b> <i>2020-11-23T00:00:00</i>
+</b> <i>matteosalvinimi</i> <b>--start_date</b> <i>2020-11-09T23:59:59</i> <b>--end_date</b> <i>2020-11-23T00:00:00</i> <b>--csv_out</b> <i>your_filename.csv</i>
 </code>
 <p>
 
