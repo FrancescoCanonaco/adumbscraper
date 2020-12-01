@@ -3,6 +3,7 @@ from selenium.webdriver.common.keys import Keys
 from datetime import datetime
 import time
 import argparse
+import pandas as pd
 
 def get_content(driver):
     #getting text from the page
@@ -79,15 +80,21 @@ def get_tweets(user = "matteosalvinimi", start_date_scraping = "2020-11-09 23:59
         elem.send_keys(Keys.PAGE_DOWN)
 
     return scraped_tweets   
-    
+
+def save_csv(tweets = None,  name = "tweets.csv"):
+    tweets_to_df = pd.DataFrame(tweets)
+    tweets_to_df.to_csv(name)
 
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='Scraper Parameter')
+    parser = argparse.ArgumentParser(description='Scraper Parameters')
     parser.add_argument('--username', dest='username', type=str, help='Profile name')
     parser.add_argument('--end_date', dest='end_date', type=str, help='the upper bound date, i.e. 2020-11-23T00:00:00')
     parser.add_argument('--start_date', dest='start_date', type=str, help='the lower bound date, i.e. 2020-11-09 23:59:59')
+    parser.add_argument('--csv_out', dest='csv_out', type=str, help='csv filename')
     args = parser.parse_args()
     #get all tweets
     tweets = get_tweets(args.username, " ".join(args.start_date.split("T")), " ".join(args.end_date.split("T")))
+    save_csv(tweets, args.csv_out)
+    print("\n Done!")
